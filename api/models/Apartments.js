@@ -76,7 +76,16 @@ const apartmentSchema = new mongoose.Schema(
     availability: {
       type: String,
     },
+    latitude: {
+      type: Number,
+      required: true,
+    },
+    longitude: {
+      type: Number,
+      required: true,
+    },
   },
+  
   { timestamps: true }
 );
 
